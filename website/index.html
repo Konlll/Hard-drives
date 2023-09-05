@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Merevlemez sebesség kalkulátor</h1>
+    </header>
+
+    <div class="form">
+        <div>
+            <label for="capacity">Kapacitás</label>
+            <input type="number" min="0" id="capacity">
+            <select id="capacity-select">
+                <option value="Mb">Mb</option>
+                <option value="Gb">Gb</option>
+                <option value="Tb">Tb</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="speed">Átviteli sebesség</label>
+            <input type="range" min="10" max="5000" step="10" id="speed">
+            <span id="range-value"></span>
+            <select id="speed-select">
+                <option value="mbps">mbps</option>
+                <option value="Kbps">Kbps</option>
+                <option value="Mbps">Mbps</option>
+                <option value="Gbps">Gbps</option>
+            </select>
+        </div>
+
+        <div class="calculate-div">
+            <button type="submit" id="calculate-button">Számol</button>
+        </div>
+
+        <p>Eredmény: <span id="result">-</span></p>
+
+    </div>
+
+    <footer>
+        &copy; Géczi Kornél - Minden jog fenntartva!
+    </footer>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
