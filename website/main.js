@@ -6,6 +6,7 @@ const result = document.querySelector("#result")
 calculateButton.addEventListener("click", () => {
     const capacity = parseInt(document.querySelector("#capacity").value)
     if(capacity < 0 || capacity > 5000){
+        alert("Csak 0 és 5000 közötti értéket adhat meg!")
         return
     }
     const capacitySelect = document.querySelector("#capacity-select").value

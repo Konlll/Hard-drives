@@ -24,6 +24,12 @@ header h1{
     font-size: 38px;
 }
 
+span#range-value{
+    padding: 3.5px;
+    border: 3px solid rgb(0, 0, 60);
+    border-right: none;
+}
+
 .form{
     width: 800px;
     margin: auto;
@@ -49,7 +55,8 @@ select{
     padding: 5px;
     font-size: 16px;
 }
-select#capacity-select{
+select#capacity-select,
+select#speed-select{
     border-left: none;
     transform: translateX(-5px);
 }
